@@ -3,10 +3,11 @@
 import os
 import shutil
 import time
+import config
 
 # Configuração dos caminhos (Origem e Destino)
-ORIGEM = r"C:\Users\WalaceFranciscoMaia\OneDrive - NIAD SHOPPING CENTERS\Downloads"
-DESTINO = r"C:\Users\WalaceFranciscoMaia\OneDrive - NIAD SHOPPING CENTERS\Desktop\Rsync"
+ORIGEM = config.ORIGEM
+DESTINO = config.DESTINO
 
 def sincronizar_pastas():
     # Cria a pasta de destino se ela não existir
